@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:src="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/heading"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pan_number"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_pan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_pan_number"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:inputType="textCapCharacters"
+        android:background="@drawable/bg_border"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/birthdate"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxLength="2"
+            android:hint="@string/dd"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:background="@drawable/bg_border"/>
+
+        <EditText
+            android:id="@+id/et_month"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:hint="@string/mm"
+            android:textAlignment="center"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:inputType="number"
+            android:background="@drawable/bg_border"/>
+
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:hint="@string/yyyy"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bg_border"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottom_msg"
+        android:layout_marginTop="200dp"/>
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/corner_button"/>
+
+
+    <TextView
+        android:id="@+id/tv_noPAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_don_t_have_a_pan"
+        android:textColor="#6041b0"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
